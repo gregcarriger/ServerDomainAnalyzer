@@ -1,0 +1,34 @@
+# Sample Windows Server Names
+# Format: One server name per line
+
+# Contoso domain servers
+WEB01.gregs.company.a.com
+WEB02.gregs.company.a.com
+DB-SRV01.gregs.company.a.com
+APP-SERVER.gregs.company.a.com
+MAIL01.gregs.company.a.com
+
+# Fabrikam domain servers
+DC01.gregs.company.b.com
+FILE-SRV.gregs.company.b.com
+PRINT01.gregs.company.b.com
+
+# External domain servers
+BACKUP01.gregs.contractor.a.com
+MONITOR.gregs.contractor.a.com
+
+# Azure cloud servers
+VM-WEB01.cloudapp.azure.com
+VM-DB01.cloudapp.azure.com
+
+# Development environment
+DEV-WEB.dev.local
+TEST-DB.test.local
+
+# Servers without domain (should be ignored in domain analysis)
+STANDALONE-SRV
+LOCAL-PC
+
+# Edge cases
+EDGE01.gist.github.com
+API-GW.microservices.internal

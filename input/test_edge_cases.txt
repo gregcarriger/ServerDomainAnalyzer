@@ -1,0 +1,39 @@
+# Test file with edge cases and invalid formats
+# This file tests various problematic server name formats
+
+# Valid servers with complex domains
+WEB01.sub.domain.company.com
+API.very.long.nested.domain.example.org
+DB01.hyphen-domain.test.local
+
+# Servers without domains
+STANDALONE-SERVER
+LOCAL-PC
+WORKSTATION01
+
+# Invalid formats that should be handled gracefully
+.invalid-starts-with-dot
+SERVER-ENDS-WITH-DOT.
+SERVER...multiple.dots
+SERVER-WITH-DOTS...
+.
+...
+
+# Servers with special characters (should be filtered out)
+SERVER@INVALID.com
+SERVER#HASH.domain.com
+SERVER$.dollar.com
+
+# Very long server names
+VERY-LONG-SERVER-NAME-THAT-EXCEEDS-NORMAL-LIMITS.extremely.long.domain.name.with.many.subdomains.test.local
+
+# Servers with spaces (should be trimmed)
+  SPACED-SERVER.domain.com  
+	TAB-SERVER.domain.com	
+
+# Empty lines and whitespace
+
+
+# Mixed case domains (should be normalized)
+UPPER-SERVER.UPPERCASE.DOMAIN.COM
+Mixed-Server.MixedCase.Domain.Com
