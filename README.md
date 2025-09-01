@@ -24,7 +24,6 @@ ServerDomainAnalyzer/
 ├── output/
 │   └── domain_history.csv           # Generated historical data
 ├── run.ps1                          # PowerShell script to run the program
-├── run.bat                          # Legacy Windows batch file (deprecated)
 └── README.md                        # This file
 ```
 
@@ -63,18 +62,6 @@ java -cp src ServerDomainAnalyzer path/to/your/servers.txt
 # Run with custom input file
 .\run.ps1 "path/to/your/servers.txt"
 ```
-
-### Using the Batch File (Windows) - Legacy
-
-```cmd
-# Run with default input file
-run.bat
-
-# Run with custom input file
-run.bat path/to/your/servers.txt
-```
-
-**Note:** The PowerShell script is recommended as it automatically detects Java installations in common locations and uses full paths for execution.
 
 ## Input File Format
 
